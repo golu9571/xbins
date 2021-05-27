@@ -5,7 +5,7 @@ const port = process.env.PORT || '8080';
 
 
 const { Telegraf } = require('telegraf');
-const chnlid = '-1001426649250' // your channel id here
+const chnlid = '1426649250' // your channel id here
 const bot = new Telegraf('1703966483:AAFokawmOTB260Eaxd-QLjZQfP5XXu_leSg'); // Bot Token Here
 
 const axios = require('axios');
@@ -66,7 +66,7 @@ Just use /bin {Bin number} to check the bin.
 
 You can also use in inline, Just use @RkBinBot {Bin Number} in any chat😉
 
-Made with ❤️ by @RkBots</b>`
+Made with ❤️ by @x_bins_op</b>`
 
 			bot.telegram.sendMessage(ctx.chat.id,START_MESSAGE, {
     	parse_mode: 'HTML',
@@ -78,7 +78,7 @@ Made with ❤️ by @RkBots</b>`
                   {text:'Go inline',  switch_inline_query: ''}
         ],
         [
-            { text: 'Our channel', url: 'https://telegram.dog/RKBOTS'}
+            { text: 'Our channel', url: 'https://telegram.dog/x_bins_op'}
           ]
         ]
       }
@@ -230,7 +230,7 @@ let results = [
       reply_markup: {
         inline_keyboard: [
           [
-            { text: 'Join Now 🥰', url: 'https://telegram.me/ViperBins' }
+            { text: 'Join Now 🥰', url: 'https://telegram.me/x_bins_op' }
           ]
         ]
       }
@@ -253,4 +253,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
+
 })
